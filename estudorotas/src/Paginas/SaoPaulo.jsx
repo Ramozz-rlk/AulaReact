@@ -9,7 +9,7 @@ São Paulo é o estado mais populoso e rico do Brasil, localizado na região Sud
 </p>
 
 <p>
-    <img src="" />
+    <img src="/SP.png" />
 </p>
 
 <p>
