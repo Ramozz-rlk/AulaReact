@@ -1,7 +1,7 @@
-export default function Exercicio1() {
+export default function Exercicio10() {
   return (
     <div>
-      <h1>Exercicio 1</h1>
+      <h1>Exercicio 10</h1>
 
 
       <div className="conteudo">
@@ -10,19 +10,23 @@ export default function Exercicio1() {
         <from>
 
           <p>
-            Digite um numero qualquer: <br />
+            Digite o valor da hora: <br />
             <input type="text" />
           </p>
 
-        
+           <p>
+            Digite a quantidade de horas: <br />
+            <input type="text" />
+          </p>
+          
           <p>
             <input type="button" value="Calcular" />
           </p>
 
           <p>
-            <a href="/">Voltar pra Home</a>
+            <a href="/">Voltar</a>
           </p>
-          
+
         </from>
       </div>
     </div >
