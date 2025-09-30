@@ -1,4 +1,20 @@
+import { useState } from "react";
+
 export default function Exercicio2() {
+  const[numero, setNumero] = useState(0);
+  const[resultado, setResultado] = useState();
+
+  function calcualar()
+{
+let Fahrenheit = (Number(numero) - 32) * 5 / 9;
+
+setResultado("A temperatura em celsus é: " Fahrenheit );
+}
+
+function limpar()
+  {
+
+  }
   return (
     <div>
       <h1>Exercicio 2</h1>
