@@ -1,29 +1,42 @@
+import { useState } from 'react';
+
 export default function Exercicio5() {
+  const [lado, setLado] = useState('');
+  const [resultado, setResultado] = useState('');
+
+  function calcular() {
+    const area = ((lado)* lado);
+    setResultado(area);
+  }
+
   return (
     <div>
-      <h1>Exercicio 5</h1>
-
+      <h1>Exercício 5</h1>
 
       <div className="conteudo">
-
-    
-        <from>
-
+        <form>
           <p>
             Digite o valor do lado: <br />
-            <input type="text" />
-          </p>
-          
-          <p>
-            <input type="button" value="Calcular" />
-          </p>
-
-          <p>
-            <a href="/">Voltar</a>
+            <input 
+              type="text" 
+              value={lado} 
+              onChange={(e) => setLado(e.target.value)} 
+            />
           </p>
 
-        </from>
+          <input 
+            type="button" 
+            value="Calcular" 
+            onClick={calcular} 
+          />
+        </form>
+
+        {resultado && (
+          <p>Área do quadrado: {resultado}</p>
+        )}
+
+        <a href="/">Voltar</a>
       </div>
-    </div >
+    </div>
   );
 }
