@@ -13,6 +13,10 @@ import Exercicio7 from "./Paginas/Exercicio7";
 import Exercicio8 from "./Paginas/Exercicio8";
 import Exercicio9 from "./Paginas/Exercicio9";
 import Exercicio10 from "./Paginas/Exercicio10";
+import Simulado1 from "./Paginas/Simulado1";
+import Simulado2 from "./Paginas/Simulado2";
+
+
 
 
 
@@ -37,6 +41,9 @@ export default function App() {
                <Route path="/Exercicio8" element={<Exercicio8 />} />
                <Route path="/Exercicio9" element={<Exercicio9 />} />
                <Route path="/Exercicio10" element={<Exercicio10 />} />
+               <Route path="/Simulado1" element={<Simulado1 />} />
+               <Route path="/Simulado2" element={<Simulado2 />} />
+
 
 
 
